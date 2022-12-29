@@ -9,7 +9,7 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Attention is all you need</description>
-    <pubDate>Thu, 29 Dec 2022 13:31:57 GMT</pubDate>
+    <pubDate>Thu, 29 Dec 2022 13:43:33 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -28,6 +28,10 @@
       <content:encoded><![CDATA[<h1 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h1><h2 id="Test-1"><a href="#Test-1" class="headerlink" title="Test"></a>Test</h2><h3 id="Test-2"><a href="#Test-2" class="headerlink" title="Test"></a>Test</h3><p>test</p>]]></content:encoded>
       
       
+      <category domain="http://example.com/categories/test/">test</category>
+      
+      
+      <category domain="http://example.com/tags/testMyBlog/">testMyBlog</category>
       
       
       <comments>http://example.com/2022/12/29/Test/#disqus_thread</comments>
