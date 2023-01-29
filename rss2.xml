@@ -9,23 +9,8 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Attention is all you need</description>
-    <pubDate>Sun, 29 Jan 2023 13:58:01 GMT</pubDate>
+    <pubDate>Sun, 29 Jan 2023 13:43:24 GMT</pubDate>
     <generator>http://hexo.io/</generator>
-    
-    <item>
-      <title>CS106L</title>
-      <link>http://example.com/2023/01/29/CS106L-1/</link>
-      <guid>http://example.com/2023/01/29/CS106L-1/</guid>
-      <pubDate>Sun, 29 Jan 2023 13:58:01 GMT</pubDate>
-      
-      
-      
-      
-      
-      
-      <comments>http://example.com/2023/01/29/CS106L-1/#disqus_thread</comments>
-      
-    </item>
     
     <item>
       <title></title>
