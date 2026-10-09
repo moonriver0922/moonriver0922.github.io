@@ -1,0 +1,34 @@
+primary_name: "Guosheng Wang"
+secondary_name: ""
+navbar_name: "Guosheng Wang"
+
+positions:
+- name: Ph.D. Student
+- name: Department of Computing, The Hong Kong Polytechnic University
+
+email: "river.wang@connect.polyu.hk"
+gscholar: TTUUXAEAAAAJ
+orcid: 0009-0004-3200-4871
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    I am a Ph.D. student in the Department of Computing at The Hong Kong Polytechnic University,
+    advised by Prof. Lei Yang. My research focuses on Agentic IoT and Wireless Spatial Intelligence,
+    with an emphasis on RF-based localization and tracking, high-precision AoA estimation, and
+    deep learning for wireless sensing.
+  </p>
+
+portrait_url: /assets/images/photos/portrait.jpg
+portrait_caption: >-
+  Profile photo from Google Scholar.
+
+education:
+- name: The Hong Kong Polytechnic University
+  dept: Department of Computing
+  position: Ph.D. Student
+  date: Jan. 2025 - present
+- name: Zhejiang University
+  dept: Department of Electrical Engineering
+  position: Undergraduate Student
+  date: Aug. 2019 - Jun. 2023

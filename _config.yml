@@ -1,0 +1,14 @@
+# Site settings
+baseurl: ""
+timezone: Asia/Hong_Kong
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-email-protect
+
+collections:
+  - publications
+  - news
+  - showcase
+  - posts
