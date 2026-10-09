@@ -1,6 +1,6 @@
 pages:
 - name: Home
-  url: /
+  url: /index.html
 - name: Publications
   url: /publications.html
 - name: Service
