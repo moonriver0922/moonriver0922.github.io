@@ -33,6 +33,7 @@ education:
   dept: Department of Electrical Engineering
   position: Undergraduate Student
   date: Aug. 2019 - Jun. 2023
+  logo: /assets/images/logos/zhejiang-university.svg
 
 service:
 - name: ACM MobiCom 2026

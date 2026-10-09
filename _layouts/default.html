@@ -5,6 +5,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{ page.title }} - {{ site.data.profile.navbar_name }}</title>
+    {% assign meta_description = page.description | default: site.description %}
+    <meta name="description" content="{{ meta_description | strip_html | strip_newlines | escape }}">
+    <meta name="author" content="{{ site.data.profile.primary_name | escape }}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <meta property="og:title" content="{{ page.title }} - {{ site.data.profile.navbar_name }}">
+    <meta property="og:description" content="{{ meta_description | strip_html | strip_newlines | escape }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ site.data.profile.portrait_url | absolute_url }}">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{{ site.data.profile.primary_name }}",
+      "url": "{{ '/' | absolute_url }}",
+      "jobTitle": "Ph.D. Student",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "The Hong Kong Polytechnic University"
+      },
+      "sameAs": [
+        "https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}&hl=en",
+        "https://orcid.org/{{ site.data.profile.orcid }}"
+      ]
+    }
+    </script>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
