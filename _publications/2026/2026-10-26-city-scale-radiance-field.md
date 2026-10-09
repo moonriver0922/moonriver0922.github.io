@@ -4,7 +4,6 @@ date:           2026-10-26 00:00:00 +0800
 selected:       true
 pub:            "ACM MobiCom"
 pub_date:       "2026"
-pub_last:       " (Accepted)"
 abstract: >-
   A city-scale radio radiance-field reconstruction system based on a mixture of radio experts.
 authors:
@@ -12,6 +11,4 @@ authors:
   - "Guosheng Wang"
   - "Donghui Dai"
   - "Lei Yang"
-links:
-  Conference: "https://sigmobile.org/mobicom/2026/accepted.html"
 ---
