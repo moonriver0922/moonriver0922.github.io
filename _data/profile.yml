@@ -3,7 +3,7 @@ secondary_name: ""
 navbar_name: "Guosheng Wang"
 
 positions:
-- name: Ph.D. Student
+- name: Second-year Ph.D. Candidate
 - name: Department of Computing, The Hong Kong Polytechnic University
 
 email: "river.wang@connect.polyu.hk"
@@ -13,7 +13,7 @@ orcid: 0009-0004-3200-4871
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a Ph.D. student in the Department of Computing at The Hong Kong Polytechnic University,
+    I am a second-year Ph.D. candidate in the Department of Computing at The Hong Kong Polytechnic University,
     advised by Prof. Lei Yang. My research focuses on Agentic IoT and Wireless Spatial Intelligence,
     with an emphasis on RF-based localization and tracking, high-precision AoA estimation, and
     deep learning for wireless sensing.
@@ -26,7 +26,7 @@ portrait_caption: >-
 education:
 - name: The Hong Kong Polytechnic University
   dept: Department of Computing
-  position: Ph.D. Student
+  position: Second-year Ph.D. Candidate
   date: Jan. 2025 - present
   logo: /assets/images/logos/polyu.svg
 - name: Zhejiang University

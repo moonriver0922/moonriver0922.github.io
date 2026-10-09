@@ -1,6 +1,6 @@
 # Guosheng Wang — Academic Homepage
 
-Personal academic homepage for Guosheng Wang, a Ph.D. student in the Department of Computing at The Hong Kong Polytechnic University.
+Personal academic homepage for Guosheng Wang, a second-year Ph.D. candidate in the Department of Computing at The Hong Kong Polytechnic University.
 
 Live site target:
 
