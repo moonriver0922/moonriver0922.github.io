@@ -2,10 +2,9 @@
 
 Personal academic homepage for Guosheng Wang, a Ph.D. student in the Department of Computing at The Hong Kong Polytechnic University.
 
-Live site targets:
+Live site target:
 
 - <https://moonriver0922.github.io>
-- <https://moonriver0922.top>
 
 This site is built with Jekyll and adapted from [academic-homepage](https://github.com/luost26/academic-homepage).
 
@@ -37,7 +36,7 @@ This draft is configured as a user-site deployment with:
 baseurl: ""
 ```
 
-For the existing `moonriver0922.github.io` repository, GitHub Pages serves the root of the `master` branch. The custom domain is preserved in `CNAME`. If the site is deployed as a project site under a different repository name, change `baseurl` in `_config.yml` to that repository path.
+For the existing `moonriver0922.github.io` repository, GitHub Pages serves the root of the `master` branch at the default GitHub Pages domain. The site does not rely on a custom-domain `CNAME` file. If the site is deployed as a project site under a different repository name, change `baseurl` in `_config.yml` to that repository path.
 
 ## Research profile
 
