@@ -3,3 +3,7 @@ pages:
   url: /
 - name: Publications
   url: /publications.html
+- name: Service
+  url: /#service
+- name: Teaching
+  url: /#teaching

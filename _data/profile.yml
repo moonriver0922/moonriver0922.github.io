@@ -44,13 +44,10 @@ service:
 teaching:
 - name: Web Application Design and Development
   code: COMP3421_20251_A
-  role: Teaching Assistant for COMP6637
   date: 2025/26, Semester 1
 - name: Advanced Big Data Computing
   code: COMP6708_20252_A
-  role: Teaching Assistant for COMP6638
   date: 2025/26, Semester 2
 - name: Information Technology
   code: ENG2003_20242_C
-  role: Departmental training
   date: 2024/25, Semester 2
