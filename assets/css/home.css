@@ -1,14 +1,16 @@
-/* Warm dark academic homepage.
-   Near-black charcoal, warm ink, dusty rose headings, soft amber and sage.
-   Type is Inter, then IBM Plex Sans, then system-ui — not BBC Reith. */
+/* Tokyo Night academic homepage.
+   Cold black (#1a1b26), ink (#c0caf5), blue headings, purple muted, green accents.
+   Display: Source Serif 4. Body: Inter / IBM Plex Sans. */
 
 :root {
-  --bg: #1c1916;
-  --ink: #e8e1d6;
-  --muted: #d4b483;
-  --heading: #e0b1a6;
-  --accent: #a8c3ae;
-  --accent-hover: #cfe0d2;
+  --bg: #1a1b26;
+  --ink: #c0caf5;
+  --muted: #bb9af7;
+  --heading: #7aa2f7;
+  --accent: #9ece6a;
+  --accent-hover: #b9f27c;
+  --font-serif: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
+  --font-sans: Inter, "IBM Plex Sans", "Segoe UI", "Helvetica Neue", system-ui, sans-serif;
   background: var(--bg);
   color: var(--ink);
   color-scheme: dark;
@@ -20,17 +22,17 @@
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: #6a5c4e var(--bg);
+  scrollbar-color: #414868 var(--bg);
 }
 
 body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: Inter, "IBM Plex Sans", "Segoe UI", "Helvetica Neue", system-ui, sans-serif;
+  font-family: var(--font-sans);
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.45;
+  line-height: 1.55;
   text-rendering: optimizeLegibility;
 }
 
@@ -39,7 +41,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #6a5c4e;
+  background-color: #414868;
   border-radius: 0.5rem;
 }
 
@@ -125,10 +127,12 @@ strong {
 }
 
 .profile-name {
+  font-family: var(--font-serif);
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.05;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
+  color: var(--heading);
   white-space: nowrap;
 }
 
@@ -148,11 +152,17 @@ strong {
   margin: 0 15px 10px;
 }
 
+.block p {
+  line-height: 1.65;
+}
+
 .block-header {
   margin: 20px 0 10px;
+  font-family: var(--font-serif);
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.25;
+  letter-spacing: -0.015em;
   color: var(--heading);
 }
 
@@ -220,7 +230,7 @@ strong {
 .item-title {
   font-size: 16px;
   font-weight: 600;
-  line-height: 1.35;
+  line-height: 1.4;
 }
 
 .venue {
@@ -256,8 +266,8 @@ strong {
 }
 
 ::selection {
-  background: #5a4638;
-  color: #f6f1e8;
+  background: #283457;
+  color: #c0caf5;
 }
 
 @media (max-width: 720px) {
@@ -317,26 +327,27 @@ strong {
   :root,
   body {
     background: #fff;
-    color: #1c1916;
+    color: #1a1b26;
   }
 
+  .profile-name,
   .block-header,
   .copyright {
-    color: #7a4034;
-    border-top-color: #7a4034;
+    color: #2e4a8a;
+    border-top-color: #2e4a8a;
   }
 
   .profile-contact,
   .when,
   .venue {
-    color: #5c4a32;
+    color: #5a4a7a;
   }
 
   .blue,
   .legend,
   .links,
   a {
-    color: #2f5a42;
+    color: #3d7a3a;
   }
 
   a {
