@@ -1,44 +1,27 @@
 # Guosheng Wang — Academic Homepage
 
-Personal academic homepage for Guosheng Wang, a second-year Ph.D. candidate in the Department of Computing at The Hong Kong Polytechnic University.
+Personal academic homepage for Guosheng Wang, a Ph.D. candidate in the Department of Computing at The Hong Kong Polytechnic University.
 
-Live site target:
+Live site: <https://moonriver0922.github.io>
 
-- <https://moonriver0922.github.io>
+The page is static HTML and CSS. `.nojekyll` tells GitHub Pages to serve the repository root as-is from `master`, so the homepage is `index.html` rather than a Jekyll theme.
 
-This site is built with Jekyll and adapted from [academic-homepage](https://github.com/luost26/academic-homepage).
+## Visual language
 
-## Content files
-
-- `_data/profile.yml` — name, affiliation, biography, contact details, education
-- `_data/authors.yml` — author-name formatting in publication lists
-- `_data/navigation.yml` — navbar pages
-- `_data/display.yml` — homepage sections
-- `_publications/` — one Markdown file per publication
-- `assets/images/photos/portrait.jpg` — Google Scholar profile photo
+The layout follows a dark single-column academic page: `#222436` background, light text, a large name, and numbered publications. Body type is [Inter](https://fonts.google.com/specimen/Inter) (OFL), with IBM Plex Sans and system-ui as fallbacks. BBC Reith is not shipped.
 
 ## Local preview
 
-Install Ruby, Bundler, and the dependencies in `Gemfile`, then run:
+From the repository root:
 
 ```bash
-bundle install
-bundle exec jekyll serve
+python3 -m http.server 8000
 ```
 
-Open the local URL shown by Jekyll.
+Open <http://127.0.0.1:8000/>.
 
-## GitHub Pages deployment
+## Content notes
 
-This draft is configured as a user-site deployment with:
-
-```yaml
-baseurl: ""
-```
-
-For the existing `moonriver0922.github.io` repository, GitHub Pages serves the root of the `master` branch at the default GitHub Pages domain. The site does not rely on a custom-domain `CNAME` file. If the site is deployed as a project site under a different repository name, change `baseurl` in `_config.yml` to that repository path.
-
-## Research profile
-
-- Google Scholar: <https://scholar.google.com/citations?user=TTUUXAEAAAAJ&hl=en>
-- ORCID: <https://orcid.org/0009-0004-3200-4871>
+- Visible email is obfuscated. Google Scholar and ORCID are the profiles already recorded for this site.
+- No CV file is in the repository, so the header does not link to one.
+- `google98c34d4d07a86a79.html` is the Google Search Console verification file.
