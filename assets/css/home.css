@@ -1,18 +1,16 @@
-/* Dark academic homepage.
-   Palette matches the Moonlight tokens used by shenyu-official.icu.
+/* Warm dark academic homepage.
+   Near-black charcoal, warm ink, dusty rose headings, soft amber and sage.
    Type is Inter, then IBM Plex Sans, then system-ui — not BBC Reith. */
 
 :root {
-  --moonRed: #ff757f;
-  --moonGreen: #c3e88d;
-  --moonYellow: #ffc777;
-  --moonBlue: #82aaff;
-  --moonPurple: #fca7ea;
-  --moonCyan: #86e1fc;
-  --moonWhite: #c8d3f5;
-  --bg: #222436;
+  --bg: #1c1916;
+  --ink: #e8e1d6;
+  --muted: #d4b483;
+  --heading: #e0b1a6;
+  --accent: #a8c3ae;
+  --accent-hover: #cfe0d2;
   background: var(--bg);
-  color: var(--moonGreen);
+  color: var(--ink);
   color-scheme: dark;
 }
 
@@ -22,13 +20,13 @@
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: var(--moonWhite) var(--bg);
+  scrollbar-color: #6a5c4e var(--bg);
 }
 
 body {
   margin: 0;
   background: var(--bg);
-  color: var(--moonGreen);
+  color: var(--ink);
   font-family: Inter, "IBM Plex Sans", "Segoe UI", "Helvetica Neue", system-ui, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -41,7 +39,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--moonWhite);
+  background-color: #6a5c4e;
   border-radius: 0.5rem;
 }
 
@@ -57,17 +55,17 @@ p {
 }
 
 a {
-  color: var(--moonWhite);
+  color: var(--accent);
   text-decoration: none;
 }
 
 a:hover,
 a:focus-visible {
-  color: var(--moonCyan);
+  color: var(--accent-hover);
 }
 
 a:focus-visible {
-  outline: 1px solid var(--moonCyan);
+  outline: 1px solid var(--accent);
   outline-offset: 2px;
 }
 
@@ -91,6 +89,15 @@ strong {
 .profile-inner {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.item-title,
+.authors,
+.inst,
+.meta,
+.line > :first-child,
+.profile-contact {
+  overflow-wrap: break-word;
 }
 
 .profile-head {
@@ -129,7 +136,7 @@ strong {
   display: flex;
   flex-direction: column;
   flex: none;
-  color: var(--moonYellow);
+  color: var(--muted);
   text-align: right;
 }
 
@@ -146,7 +153,7 @@ strong {
   font-size: 24px;
   font-weight: 400;
   line-height: 1.25;
-  color: var(--moonRed);
+  color: var(--heading);
 }
 
 .block p + p {
@@ -154,7 +161,7 @@ strong {
 }
 
 .blue {
-  color: var(--moonBlue);
+  color: var(--accent);
   font-weight: 600;
 }
 
@@ -164,10 +171,12 @@ strong {
   margin-bottom: 10px;
 }
 
+.row:has(.inst) {
+  flex-direction: column;
+}
+
 .inst {
-  flex: none;
-  margin-right: 16px;
-  white-space: nowrap;
+  margin-bottom: 2px;
 }
 
 .row-body {
@@ -193,7 +202,7 @@ strong {
 
 .when {
   margin-left: auto;
-  color: var(--moonYellow);
+  color: var(--muted);
   white-space: nowrap;
 }
 
@@ -215,7 +224,7 @@ strong {
 }
 
 .venue {
-  color: var(--moonYellow);
+  color: var(--muted);
 }
 
 .authors {
@@ -223,12 +232,12 @@ strong {
 }
 
 .links {
-  color: var(--moonWhite);
+  color: var(--accent);
 }
 
 .legend {
   margin-top: 4px;
-  color: var(--moonBlue);
+  color: var(--accent);
   font-size: 13px;
 }
 
@@ -243,12 +252,12 @@ strong {
   gap: 12px;
   margin-top: 20px;
   padding-top: 8px;
-  border-top: thin dashed var(--moonRed);
+  border-top: thin dashed var(--heading);
 }
 
 ::selection {
-  background: var(--moonBlue);
-  color: var(--bg);
+  background: #5a4638;
+  color: #f6f1e8;
 }
 
 @media (max-width: 720px) {
@@ -271,6 +280,17 @@ strong {
 
   .profile-name {
     font-size: 32px;
+    white-space: normal;
+  }
+
+  .identity {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .keep,
+  .when {
+    white-space: normal;
   }
 
   .block-header {
@@ -282,16 +302,6 @@ strong {
   .profile-contact > div {
     margin-left: 0;
     text-align: left;
-  }
-
-  .row {
-    flex-direction: column;
-  }
-
-  .inst {
-    white-space: normal;
-    margin-right: 0;
-    margin-bottom: 2px;
   }
 
   .line {
@@ -307,24 +317,29 @@ strong {
   :root,
   body {
     background: #fff;
-    color: #1a1a1a;
+    color: #1c1916;
   }
 
   .block-header,
+  .copyright {
+    color: #7a4034;
+    border-top-color: #7a4034;
+  }
+
   .profile-contact,
   .when,
-  .venue,
+  .venue {
+    color: #5c4a32;
+  }
+
   .blue,
   .legend,
+  .links,
   a {
-    color: #1a1a1a;
+    color: #2f5a42;
   }
 
   a {
     text-decoration: underline;
-  }
-
-  .copyright {
-    border-top-color: #1a1a1a;
   }
 }
