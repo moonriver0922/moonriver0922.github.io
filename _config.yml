@@ -3,14 +3,11 @@ baseurl: ""
 url: "https://moonriver0922.github.io"
 title: "Guosheng Wang"
 description: >-
-  Guosheng Wang is a second-year Ph.D. candidate in the Department of Computing at The Hong Kong Polytechnic University, researching Agentic IoT and wireless spatial intelligence.
+  Guosheng Wang is a Ph.D. candidate in the Department of Computing at The Hong Kong Polytechnic University.
 timezone: Asia/Hong_Kong
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-email-protect
-
 collections:
   - publications
   - news
