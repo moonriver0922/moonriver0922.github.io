@@ -33,3 +33,7 @@ Color jobs (not a wash): gradient name, section titles, links/interests, venue l
 | Name underline | cyan→violet | brighter cyan `#7EE7F7 → #67D4E8` |
 
 v2 remains at [graphite-signal.html](./graphite-signal.html).
+
+## Graphite Signal v4 — reading scale
+
+[graphite-signal-v4.html](./graphite-signal-v4.html) keeps the v3 page structure, photo, and charcoal base. Type is larger, metadata is no longer miniature, and the name is solid cold white with a short cyan underline. v3 remains at [graphite-signal-v3.html](./graphite-signal-v3.html).
