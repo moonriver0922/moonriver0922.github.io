@@ -1,0 +1,390 @@
+/* Shared layout for cold-scheme homepage previews.
+   Tokenized so each scheme only swaps color/type variables.
+   Production index.html / assets/css/home.css are untouched. */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-thumb) var(--bg);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--body-size, 14px);
+  font-weight: 400;
+  line-height: var(--body-lh, 1.55);
+  letter-spacing: var(--body-tracking, 0);
+  text-rendering: optimizeLegibility;
+  color-scheme: var(--color-scheme);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--accent-hover);
+}
+
+a:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 2px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.skip {
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  transform: translateY(-150%);
+  background: var(--bg);
+  padding: 4px 8px;
+  z-index: 20;
+}
+
+.skip:focus {
+  transform: none;
+}
+
+/* Preview chrome — sparse, no marketing chrome */
+.preview-bar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  padding: 8px 16px;
+  background: color-mix(in srgb, var(--bg) 92%, var(--ink));
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.preview-bar a {
+  color: var(--ink);
+}
+
+.preview-bar a[aria-current="page"] {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.preview-bar .sep {
+  opacity: 0.35;
+}
+
+.preview-meta {
+  margin-left: auto;
+  font-family: var(--font-mono, var(--font-body));
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
+.profile-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 8px;
+}
+
+.item-title,
+.authors,
+.inst,
+.meta,
+.line > :first-child,
+.profile-contact {
+  overflow-wrap: break-word;
+}
+
+.profile-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 28px 0 24px;
+  gap: 24px;
+}
+
+.identity {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-right: auto;
+  flex: none;
+}
+
+.portrait {
+  width: 112px;
+  height: 112px;
+  flex: none;
+  object-fit: cover;
+  object-position: center 18%;
+  border: 1px solid var(--rule);
+}
+
+.profile-name {
+  font-family: var(--font-display);
+  font-size: var(--name-size, 46px);
+  font-weight: var(--name-weight, 600);
+  line-height: 1.05;
+  letter-spacing: var(--name-tracking, -0.03em);
+  color: var(--heading);
+  white-space: nowrap;
+  text-transform: var(--name-transform, none);
+}
+
+.profile-contact {
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  color: var(--muted);
+  text-align: right;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.profile-contact > div {
+  margin-left: auto;
+}
+
+.block {
+  margin: 0 15px 10px;
+}
+
+.block p {
+  line-height: 1.65;
+}
+
+.block-header {
+  margin: 28px 15px 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--font-display);
+  font-size: var(--h2-size, 22px);
+  font-weight: var(--h2-weight, 500);
+  line-height: 1.25;
+  letter-spacing: var(--h2-tracking, -0.02em);
+  color: var(--heading);
+  text-transform: var(--h2-transform, none);
+}
+
+.block p + p {
+  margin-top: 10px;
+}
+
+.blue {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 12px;
+}
+
+.row:has(.inst) {
+  flex-direction: column;
+}
+
+.inst {
+  margin-bottom: 2px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.row-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.line > :first-child {
+  min-width: 0;
+}
+
+.line + .line,
+.meta {
+  margin-top: 2px;
+}
+
+.when {
+  margin-left: auto;
+  color: var(--muted);
+  white-space: nowrap;
+  font-family: var(--font-mono, var(--font-body));
+  font-size: 12px;
+  letter-spacing: 0.01em;
+}
+
+.keep {
+  white-space: nowrap;
+}
+
+.idx {
+  width: 2rem;
+  flex: none;
+  margin-right: 5px;
+  text-align: right;
+  font-family: var(--font-mono, var(--font-body));
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.item-title {
+  font-size: 15.5px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.venue {
+  color: var(--muted);
+  font-family: var(--font-mono, var(--font-body));
+  font-size: 12.5px;
+}
+
+.authors {
+  font-style: italic;
+  font-size: 13.5px;
+}
+
+.links {
+  color: var(--accent);
+  font-size: 13px;
+}
+
+.legend {
+  margin-top: 4px;
+  color: var(--accent);
+  font-size: 13px;
+}
+
+.copyright-block {
+  margin: 0 15px 24px;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 28px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--rule-strong, var(--heading));
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.credit {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.credit a:hover,
+.credit a:focus-visible {
+  color: var(--accent);
+}
+
+::selection {
+  background: var(--selection-bg);
+  color: var(--selection-ink);
+}
+
+@media (max-width: 720px) {
+  .preview-bar {
+    padding: 8px 12px;
+  }
+
+  .preview-meta {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .profile-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .identity {
+    margin-right: 0;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .portrait {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile-name {
+    font-size: 30px;
+    white-space: normal;
+  }
+
+  .keep,
+  .when {
+    white-space: normal;
+  }
+
+  .profile-contact,
+  .profile-contact > div {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .line {
+    flex-wrap: wrap;
+  }
+
+  .copyright {
+    flex-direction: column;
+  }
+}

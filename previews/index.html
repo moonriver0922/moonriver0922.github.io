@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cold scheme previews — Guosheng Wang</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0e0f11">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0e0f11; --ink: #d4d7de; --muted: #7a8290; --accent: #7eb8d4; --rule: #262a31;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 14px; line-height: 1.55;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 2px; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 18px 48px; }
+    h1 {
+      font-family: "Space Grotesk", system-ui, sans-serif; font-size: 28px; font-weight: 600;
+      letter-spacing: -0.03em; margin: 0 0 8px;
+    }
+    .lede { color: var(--muted); max-width: 62ch; margin: 0 0 22px; }
+    .note {
+      border: 1px solid var(--rule); padding: 10px 12px; margin: 0 0 28px; color: var(--muted); font-size: 12.5px;
+      font-family: "IBM Plex Mono", monospace;
+    }
+    .nav { display: flex; flex-wrap: wrap; gap: 10px 16px; margin-bottom: 28px; font-size: 13px; }
+    .card {
+      border-top: 1px solid var(--rule); padding: 22px 0 28px; margin: 0;
+    }
+    .card h2 {
+      font-family: "Space Grotesk", system-ui, sans-serif; font-size: 20px; margin: 0 0 6px; letter-spacing: -0.02em;
+    }
+    .card h2 a { color: var(--ink); }
+    .blurb { margin: 0 0 4px; color: var(--muted); }
+    .pair { margin: 0 0 12px; font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--muted); }
+    .badge {
+      display: inline-block; margin-left: 8px; padding: 1px 6px; border: 1px solid var(--accent);
+      color: var(--accent); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;
+      vertical-align: middle; font-family: "IBM Plex Mono", monospace;
+    }
+    .swatches { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    .chip {
+      display: inline-flex; align-items: center; gap: 6px; padding: 3px 8px 3px 4px;
+      border: 1px solid var(--rule); font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--muted);
+    }
+    .chip i { width: 12px; height: 12px; display: inline-block; border: 1px solid #0006; }
+    .open { margin: 0 0 12px; }
+    .frame {
+      width: 100%; height: 640px; border: 1px solid var(--rule); background: #000; display: block;
+    }
+    @media (max-width: 720px) {
+      .frame { height: 520px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Cold scheme previews</h1>
+    <p class="lede">Four austere color + typography directions for the academic homepage. Full-page renderings below; production <code>index.html</code> is unchanged. English content, photo, links, and footer credit preserved.</p>
+    <p class="note">PREVIEW ONLY · noindex · does not replace the live Tokyo Night theme · open each scheme for a clean full-page view</p>
+    <nav class="nav" aria-label="Schemes">
+      <a href="#graphite-ice">Graphite Ice</a><a href="#naval-silver">Naval Silver</a><a href="#cold-paper">Cold Paper</a><a href="#obsidian-indigo">Obsidian Indigo</a>
+      <span style="color:var(--muted)">|</span>
+      <a href="graphite-ice.html">Open Graphite</a><a href="naval-silver.html">Open Naval</a><a href="cold-paper.html">Open Paper</a><a href="obsidian-indigo.html">Open Obsidian</a>
+    </nav>
+    
+    <article class="card" id="graphite-ice">
+      <header>
+        <h2><a href="graphite-ice.html">Graphite Ice</a> </h2>
+        <p class="blurb">Near-black graphite field, sparse ice-blue accents, geometric grotesk display.</p>
+        <p class="pair">Space Grotesk (display) · IBM Plex Sans (body) · IBM Plex Mono (dates / idx / venue)</p>
+      </header>
+      <div class="swatches"><span class="chip"><i style="background:#0e0f11"></i>bg #0e0f11</span><span class="chip"><i style="background:#d4d7de"></i>ink #d4d7de</span><span class="chip"><i style="background:#6e7582"></i>muted #6e7582</span><span class="chip"><i style="background:#e6e9ef"></i>heading #e6e9ef</span><span class="chip"><i style="background:#7eb8d4"></i>accent #7eb8d4</span><span class="chip"><i style="background:#262a31"></i>rule #262a31</span></div>
+      <p class="open"><a href="graphite-ice.html">Open full homepage preview →</a></p>
+      <iframe class="frame" title="Graphite Ice preview" src="graphite-ice.html" loading="lazy"></iframe>
+    </article>
+    <article class="card" id="naval-silver">
+      <header>
+        <h2><a href="naval-silver.html">Naval Silver</a> <span class="badge">recommended</span></h2>
+        <p class="blurb">Blue-black navy ground, icy silver hierarchy, technical sans throughout.</p>
+        <p class="pair">Sora (display, tracked caps for sections) · IBM Plex Sans (body) · IBM Plex Mono (meta)</p>
+      </header>
+      <div class="swatches"><span class="chip"><i style="background:#08101c"></i>bg #08101c</span><span class="chip"><i style="background:#d7dee8"></i>ink #d7dee8</span><span class="chip"><i style="background:#8090a3"></i>muted #8090a3</span><span class="chip"><i style="background:#eef2f7"></i>heading #eef2f7</span><span class="chip"><i style="background:#9db0c4"></i>accent #9db0c4</span><span class="chip"><i style="background:#1a2740"></i>rule #1a2740</span></div>
+      <p class="open"><a href="naval-silver.html">Open full homepage preview →</a></p>
+      <iframe class="frame" title="Naval Silver preview" src="naval-silver.html" loading="lazy"></iframe>
+    </article>
+    <article class="card" id="cold-paper">
+      <header>
+        <h2><a href="cold-paper.html">Cold Paper</a> </h2>
+        <p class="blurb">Steel-light paper field, high-contrast ink, architectural serif headings.</p>
+        <p class="pair">Source Serif 4 (display) · IBM Plex Sans (body) · IBM Plex Mono (meta)</p>
+      </header>
+      <div class="swatches"><span class="chip"><i style="background:#eceff2"></i>bg #eceff2</span><span class="chip"><i style="background:#171a1f"></i>ink #171a1f</span><span class="chip"><i style="background:#5a6370"></i>muted #5a6370</span><span class="chip"><i style="background:#0f1217"></i>heading #0f1217</span><span class="chip"><i style="background:#2c4a66"></i>accent #2c4a66</span><span class="chip"><i style="background:#c5ccd4"></i>rule #c5ccd4</span></div>
+      <p class="open"><a href="cold-paper.html">Open full homepage preview →</a></p>
+      <iframe class="frame" title="Cold Paper preview" src="cold-paper.html" loading="lazy"></iframe>
+    </article>
+    <article class="card" id="obsidian-indigo">
+      <header>
+        <h2><a href="obsidian-indigo.html">Obsidian Indigo</a> </h2>
+        <p class="blurb">Muted obsidian ground, restrained indigo accent, geometric condensed headlines.</p>
+        <p class="pair">Sora condensed tracking (display) · Manrope (body) · IBM Plex Mono (meta)</p>
+      </header>
+      <div class="swatches"><span class="chip"><i style="background:#12141c"></i>bg #12141c</span><span class="chip"><i style="background:#c8ccd6"></i>ink #c8ccd6</span><span class="chip"><i style="background:#6d7388"></i>muted #6d7388</span><span class="chip"><i style="background:#b6bdd0"></i>heading #b6bdd0</span><span class="chip"><i style="background:#6a7db0"></i>accent #6a7db0</span><span class="chip"><i style="background:#242836"></i>rule #242836</span></div>
+      <p class="open"><a href="obsidian-indigo.html">Open full homepage preview →</a></p>
+      <iframe class="frame" title="Obsidian Indigo preview" src="obsidian-indigo.html" loading="lazy"></iframe>
+    </article>
+  </div>
+</body>
+</html>
