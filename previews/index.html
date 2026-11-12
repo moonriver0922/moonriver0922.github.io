@@ -3,114 +3,102 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cold scheme previews — Guosheng Wang</title>
+  <title>Cold schemes v2 — richer color — Guosheng Wang</title>
   <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#0e0f11">
+  <meta name="theme-color" content="#1a1b26">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --bg: #0e0f11; --ink: #d4d7de; --muted: #7a8290; --accent: #7eb8d4; --rule: #262a31;
-    }
+    :root { color-scheme: dark; }
     * { box-sizing: border-box; }
     body {
-      margin: 0; background: var(--bg); color: var(--ink);
-      font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 14px; line-height: 1.55;
+      margin: 0; background: #14151c; color: #d7dced;
+      font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 14.5px; line-height: 1.55;
     }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; text-underline-offset: 2px; }
-    .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 18px 48px; }
+    a { color: #7dcfff; text-decoration: none; }
+    a:hover { color: #9ece6a; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 18px 56px; }
     h1 {
-      font-family: "Space Grotesk", system-ui, sans-serif; font-size: 28px; font-weight: 600;
+      font-family: "Source Serif 4", Georgia, serif; font-size: 32px; font-weight: 600;
       letter-spacing: -0.03em; margin: 0 0 8px;
+      background: linear-gradient(100deg, #7dcfff, #bb9af7 60%, #9ece6a);
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
     }
-    .lede { color: var(--muted); max-width: 62ch; margin: 0 0 22px; }
+    .lede { color: #a9b1d6; max-width: 68ch; margin: 0 0 14px; }
     .note {
-      border: 1px solid var(--rule); padding: 10px 12px; margin: 0 0 28px; color: var(--muted); font-size: 12.5px;
-      font-family: "IBM Plex Mono", monospace;
+      border-left: 3px solid #7dcfff; padding: 8px 12px; margin: 0 0 22px;
+      color: #a9b1d6; font-size: 12.5px; font-family: "IBM Plex Mono", monospace;
+      background: #1a1b26;
     }
-    .nav { display: flex; flex-wrap: wrap; gap: 10px 16px; margin-bottom: 28px; font-size: 13px; }
-    .card {
-      border-top: 1px solid var(--rule); padding: 22px 0 28px; margin: 0;
-    }
+    .nav { display: flex; flex-wrap: wrap; gap: 10px 16px; margin-bottom: 8px; font-size: 13px; }
+    .card { border-top: 1px solid #3b4261; padding: 22px 0 28px; }
     .card h2 {
-      font-family: "Space Grotesk", system-ui, sans-serif; font-size: 20px; margin: 0 0 6px; letter-spacing: -0.02em;
+      font-family: "Source Serif 4", Georgia, serif; font-size: 22px; margin: 0 0 6px; letter-spacing: -0.02em;
     }
-    .card h2 a { color: var(--ink); }
-    .blurb { margin: 0 0 4px; color: var(--muted); }
-    .pair { margin: 0 0 12px; font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--muted); }
+    .card h2 a { color: #e6e9f5; -webkit-text-fill-color: #e6e9f5; }
+    .blurb { margin: 0 0 4px; color: #c0caf5; }
+    .pair { margin: 0 0 12px; font-family: "IBM Plex Mono", monospace; font-size: 12px; color: #a9b1d6; }
     .badge {
-      display: inline-block; margin-left: 8px; padding: 1px 6px; border: 1px solid var(--accent);
-      color: var(--accent); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;
+      display: inline-block; margin-left: 8px; padding: 1px 6px; border: 1px solid #9ece6a;
+      color: #9ece6a; font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;
       vertical-align: middle; font-family: "IBM Plex Mono", monospace;
     }
-    .swatches { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
-    .chip {
-      display: inline-flex; align-items: center; gap: 6px; padding: 3px 8px 3px 4px;
-      border: 1px solid var(--rule); font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--muted);
+    .roles { list-style: none; padding: 0; margin: 0 0 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .roles li {
+      font-family: "IBM Plex Mono", monospace; font-size: 11.5px; color: #a9b1d6;
+      border: 1px solid #3b4261; padding: 4px 8px;
     }
-    .chip i { width: 12px; height: 12px; display: inline-block; border: 1px solid #0006; }
+    .roles b { color: #e6e9f5; font-weight: 500; }
+    .roles span { color: #7aa2f7; }
     .open { margin: 0 0 12px; }
-    .frame {
-      width: 100%; height: 640px; border: 1px solid var(--rule); background: #000; display: block;
-    }
-    @media (max-width: 720px) {
-      .frame { height: 520px; }
-    }
+    .frame { width: 100%; height: 680px; border: 1px solid #3b4261; background: #000; display: block; }
+    .v1 { margin-top: 12px; color: #a9b1d6; font-size: 13px; }
+    @media (max-width: 720px) { .frame { height: 520px; } }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>Cold scheme previews</h1>
-    <p class="lede">Four austere color + typography directions for the academic homepage. Full-page renderings below; production <code>index.html</code> is unchanged. English content, photo, links, and footer credit preserved.</p>
-    <p class="note">PREVIEW ONLY · noindex · does not replace the live Tokyo Night theme · open each scheme for a clean full-page view</p>
-    <nav class="nav" aria-label="Schemes">
-      <a href="#graphite-ice">Graphite Ice</a><a href="#naval-silver">Naval Silver</a><a href="#cold-paper">Cold Paper</a><a href="#obsidian-indigo">Obsidian Indigo</a>
-      <span style="color:var(--muted)">|</span>
-      <a href="graphite-ice.html">Open Graphite</a><a href="naval-silver.html">Open Naval</a><a href="cold-paper.html">Open Paper</a><a href="obsidian-indigo.html">Open Obsidian</a>
+    <h1>Cold schemes, v2</h1>
+    <p class="lede">Three full homepage renderings. Same academic text as the live site. Color is assigned: name, section titles, links, venues, dates, and index marks. Body copy stays a readable neutral. The earlier four gray passes are kept below as v1.</p>
+    <p class="note">PREVIEW ONLY · noindex · does not replace the live homepage · production index.html is unchanged</p>
+    <nav class="nav" aria-label="v2 schemes">
+      <a href="#midnight-jewel">Midnight Jewel</a><a href="#graphite-signal">Graphite Signal</a><a href="#luminous-prism">Luminous Prism</a>
+      <span style="color:#3b4261">|</span>
+      <a href="midnight-jewel.html">Open Midnight</a><a href="graphite-signal.html">Open Signal</a><a href="luminous-prism.html">Open Lumen</a>
     </nav>
     
-    <article class="card" id="graphite-ice">
+    <article class="card" id="midnight-jewel">
       <header>
-        <h2><a href="graphite-ice.html">Graphite Ice</a> </h2>
-        <p class="blurb">Near-black graphite field, sparse ice-blue accents, geometric grotesk display.</p>
-        <p class="pair">Space Grotesk (display) · IBM Plex Sans (body) · IBM Plex Mono (dates / idx / venue)</p>
+        <h2><a href="midnight-jewel.html">Midnight Jewel</a> <span class="badge">recommended</span></h2>
+        <p class="blurb">Tokyo Night depth, with ice, lilac, jade, and a small gold index doing separate jobs. Body ink stays the readable lavender-silver.</p>
+        <p class="pair">Source Serif 4 (display) · IBM Plex Sans (body) · IBM Plex Mono (dates, index, venue)</p>
       </header>
-      <div class="swatches"><span class="chip"><i style="background:#0e0f11"></i>bg #0e0f11</span><span class="chip"><i style="background:#d4d7de"></i>ink #d4d7de</span><span class="chip"><i style="background:#6e7582"></i>muted #6e7582</span><span class="chip"><i style="background:#e6e9ef"></i>heading #e6e9ef</span><span class="chip"><i style="background:#7eb8d4"></i>accent #7eb8d4</span><span class="chip"><i style="background:#262a31"></i>rule #262a31</span></div>
-      <p class="open"><a href="graphite-ice.html">Open full homepage preview →</a></p>
-      <iframe class="frame" title="Graphite Ice preview" src="graphite-ice.html" loading="lazy"></iframe>
+      <ul class="roles"><li><code>bg</code> <b>#1a1b26</b> <span>midnight</span></li><li><code>ink</code> <b>#c0caf5</b> <span>body</span></li><li><code>name</code> <b>#7dcfff → #bb9af7 → #9ece6a</b> <span>gradient</span></li><li><code>section</code> <b>#7aa2f7</b> <span>titles</span></li><li><code>links</code> <b>#9ece6a</b> <span>jade</span></li><li><code>venue</code> <b>#bb9af7</b> <span>lilac</span></li><li><code>dates</code> <b>#7dcfff</b> <span>ice</span></li><li><code>index</code> <b>#e0af68</b> <span>gold</span></li></ul>
+      <p class="open"><a href="midnight-jewel.html">Open full homepage →</a></p>
+      <iframe class="frame" title="Midnight Jewel preview" src="midnight-jewel.html" loading="lazy"></iframe>
     </article>
-    <article class="card" id="naval-silver">
+    <article class="card" id="graphite-signal">
       <header>
-        <h2><a href="naval-silver.html">Naval Silver</a> <span class="badge">recommended</span></h2>
-        <p class="blurb">Blue-black navy ground, icy silver hierarchy, technical sans throughout.</p>
-        <p class="pair">Sora (display, tracked caps for sections) · IBM Plex Sans (body) · IBM Plex Mono (meta)</p>
+        <h2><a href="graphite-signal.html">Graphite Signal</a> </h2>
+        <p class="blurb">Near-black graphite with bright silver body text. Electric cyan and steel violet are editorial marks, not a wash. A copper hover is the only warm note.</p>
+        <p class="pair">Space Grotesk (display) · Instrument Sans (body) · IBM Plex Mono (dates, index, venue)</p>
       </header>
-      <div class="swatches"><span class="chip"><i style="background:#08101c"></i>bg #08101c</span><span class="chip"><i style="background:#d7dee8"></i>ink #d7dee8</span><span class="chip"><i style="background:#8090a3"></i>muted #8090a3</span><span class="chip"><i style="background:#eef2f7"></i>heading #eef2f7</span><span class="chip"><i style="background:#9db0c4"></i>accent #9db0c4</span><span class="chip"><i style="background:#1a2740"></i>rule #1a2740</span></div>
-      <p class="open"><a href="naval-silver.html">Open full homepage preview →</a></p>
-      <iframe class="frame" title="Naval Silver preview" src="naval-silver.html" loading="lazy"></iframe>
+      <ul class="roles"><li><code>bg</code> <b>#0e1116</b> <span>graphite</span></li><li><code>ink</code> <b>#e6ebf2</b> <span>body</span></li><li><code>name</code> <b>#67e8f9 → #a78bfa</b> <span>gradient</span></li><li><code>section</code> <b>#c4b5fd</b> <span>violet</span></li><li><code>links</code> <b>#22d3ee</b> <span>cyan</span></li><li><code>venue</code> <b>#a78bfa</b> <span>violet</span></li><li><code>dates</code> <b>#5eead4</b> <span>teal</span></li><li><code>index</code> <b>#22d3ee</b> <span>cyan</span></li></ul>
+      <p class="open"><a href="graphite-signal.html">Open full homepage →</a></p>
+      <iframe class="frame" title="Graphite Signal preview" src="graphite-signal.html" loading="lazy"></iframe>
     </article>
-    <article class="card" id="cold-paper">
+    <article class="card" id="luminous-prism">
       <header>
-        <h2><a href="cold-paper.html">Cold Paper</a> </h2>
-        <p class="blurb">Steel-light paper field, high-contrast ink, architectural serif headings.</p>
-        <p class="pair">Source Serif 4 (display) · IBM Plex Sans (body) · IBM Plex Mono (meta)</p>
+        <h2><a href="luminous-prism.html">Luminous Prism</a> </h2>
+        <p class="blurb">Cold luminous paper. Sapphire, violet, and teal are small ink accents. Bronze index numbers are the single warm flash. Body text is near-black, not gray.</p>
+        <p class="pair">Sora (display) · Manrope (body) · IBM Plex Mono (dates, index, venue)</p>
       </header>
-      <div class="swatches"><span class="chip"><i style="background:#eceff2"></i>bg #eceff2</span><span class="chip"><i style="background:#171a1f"></i>ink #171a1f</span><span class="chip"><i style="background:#5a6370"></i>muted #5a6370</span><span class="chip"><i style="background:#0f1217"></i>heading #0f1217</span><span class="chip"><i style="background:#2c4a66"></i>accent #2c4a66</span><span class="chip"><i style="background:#c5ccd4"></i>rule #c5ccd4</span></div>
-      <p class="open"><a href="cold-paper.html">Open full homepage preview →</a></p>
-      <iframe class="frame" title="Cold Paper preview" src="cold-paper.html" loading="lazy"></iframe>
+      <ul class="roles"><li><code>bg</code> <b>#f2f4f8</b> <span>paper</span></li><li><code>ink</code> <b>#1b2230</b> <span>body</span></li><li><code>name</code> <b>#1e3a8a → #6d28d9</b> <span>gradient</span></li><li><code>section</code> <b>#1d4ed8</b> <span>sapphire</span></li><li><code>links</code> <b>#0f766e</b> <span>teal</span></li><li><code>venue</code> <b>#6d28d9</b> <span>violet</span></li><li><code>dates</code> <b>#1d4ed8</b> <span>sapphire</span></li><li><code>index</code> <b>#b45309</b> <span>bronze</span></li></ul>
+      <p class="open"><a href="luminous-prism.html">Open full homepage →</a></p>
+      <iframe class="frame" title="Luminous Prism preview" src="luminous-prism.html" loading="lazy"></iframe>
     </article>
-    <article class="card" id="obsidian-indigo">
-      <header>
-        <h2><a href="obsidian-indigo.html">Obsidian Indigo</a> </h2>
-        <p class="blurb">Muted obsidian ground, restrained indigo accent, geometric condensed headlines.</p>
-        <p class="pair">Sora condensed tracking (display) · Manrope (body) · IBM Plex Mono (meta)</p>
-      </header>
-      <div class="swatches"><span class="chip"><i style="background:#12141c"></i>bg #12141c</span><span class="chip"><i style="background:#c8ccd6"></i>ink #c8ccd6</span><span class="chip"><i style="background:#6d7388"></i>muted #6d7388</span><span class="chip"><i style="background:#b6bdd0"></i>heading #b6bdd0</span><span class="chip"><i style="background:#6a7db0"></i>accent #6a7db0</span><span class="chip"><i style="background:#242836"></i>rule #242836</span></div>
-      <p class="open"><a href="obsidian-indigo.html">Open full homepage preview →</a></p>
-      <iframe class="frame" title="Obsidian Indigo preview" src="obsidian-indigo.html" loading="lazy"></iframe>
-    </article>
+    <p class="v1">Earlier flatter pass (v1): <a href="graphite-ice.html">Graphite Ice</a> · <a href="naval-silver.html">Naval Silver</a> · <a href="cold-paper.html">Cold Paper</a> · <a href="obsidian-indigo.html">Obsidian Indigo</a></p>
   </div>
 </body>
 </html>
