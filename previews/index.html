@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cold schemes v2 — richer color — Guosheng Wang</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#1a1b26">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: #14151c; color: #d7dced;
+      font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 14.5px; line-height: 1.55;
+    }
+    a { color: #7dcfff; text-decoration: none; }
+    a:hover { color: #9ece6a; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 18px 56px; }
+    h1 {
+      font-family: "Source Serif 4", Georgia, serif; font-size: 32px; font-weight: 600;
+      letter-spacing: -0.03em; margin: 0 0 8px;
+      background: linear-gradient(100deg, #7dcfff, #bb9af7 60%, #9ece6a);
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .lede { color: #a9b1d6; max-width: 68ch; margin: 0 0 14px; }
+    .note {
+      border-left: 3px solid #7dcfff; padding: 8px 12px; margin: 0 0 22px;
+      color: #a9b1d6; font-size: 12.5px; font-family: "IBM Plex Mono", monospace;
+      background: #1a1b26;
+    }
+    .nav { display: flex; flex-wrap: wrap; gap: 10px 16px; margin-bottom: 8px; font-size: 13px; }
+    .card { border-top: 1px solid #3b4261; padding: 22px 0 28px; }
+    .card h2 {
+      font-family: "Source Serif 4", Georgia, serif; font-size: 22px; margin: 0 0 6px; letter-spacing: -0.02em;
+    }
+    .card h2 a { color: #e6e9f5; -webkit-text-fill-color: #e6e9f5; }
+    .blurb { margin: 0 0 4px; color: #c0caf5; }
+    .pair { margin: 0 0 12px; font-family: "IBM Plex Mono", monospace; font-size: 12px; color: #a9b1d6; }
+    .badge {
+      display: inline-block; margin-left: 8px; padding: 1px 6px; border: 1px solid #9ece6a;
+      color: #9ece6a; font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;
+      vertical-align: middle; font-family: "IBM Plex Mono", monospace;
+    }
+    .roles { list-style: none; padding: 0; margin: 0 0 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .roles li {
+      font-family: "IBM Plex Mono", monospace; font-size: 11.5px; color: #a9b1d6;
+      border: 1px solid #3b4261; padding: 4px 8px;
+    }
+    .roles b { color: #e6e9f5; font-weight: 500; }
+    .roles span { color: #7aa2f7; }
+    .open { margin: 0 0 12px; }
+    .frame { width: 100%; height: 680px; border: 1px solid #3b4261; background: #000; display: block; }
+    .v1 { margin-top: 12px; color: #a9b1d6; font-size: 13px; }
+    @media (max-width: 720px) { .frame { height: 520px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Cold schemes, v2</h1>
+    <p class="lede">Three full homepage renderings. Same academic text as the live site. Color is assigned: name, section titles, links, venues, dates, and index marks. Body copy stays a readable neutral. The earlier four gray passes are kept below as v1.</p>
+    <p class="note">PREVIEW ONLY · noindex · does not replace the live homepage · production index.html is unchanged</p>
+    <nav class="nav" aria-label="v2 schemes">
+      <a href="#midnight-jewel">Midnight Jewel</a><a href="#graphite-signal">Graphite Signal</a><a href="#luminous-prism">Luminous Prism</a>
+      <span style="color:#3b4261">|</span>
+      <a href="midnight-jewel.html">Open Midnight</a><a href="graphite-signal.html">Open Signal</a><a href="luminous-prism.html">Open Lumen</a>
+    </nav>
+    
+    <article class="card" id="midnight-jewel">
+      <header>
+        <h2><a href="midnight-jewel.html">Midnight Jewel</a> <span class="badge">recommended</span></h2>
+        <p class="blurb">Tokyo Night depth, with ice, lilac, jade, and a small gold index doing separate jobs. Body ink stays the readable lavender-silver.</p>
+        <p class="pair">Source Serif 4 (display) · IBM Plex Sans (body) · IBM Plex Mono (dates, index, venue)</p>
+      </header>
+      <ul class="roles"><li><code>bg</code> <b>#1a1b26</b> <span>midnight</span></li><li><code>ink</code> <b>#c0caf5</b> <span>body</span></li><li><code>name</code> <b>#7dcfff → #bb9af7 → #9ece6a</b> <span>gradient</span></li><li><code>section</code> <b>#7aa2f7</b> <span>titles</span></li><li><code>links</code> <b>#9ece6a</b> <span>jade</span></li><li><code>venue</code> <b>#bb9af7</b> <span>lilac</span></li><li><code>dates</code> <b>#7dcfff</b> <span>ice</span></li><li><code>index</code> <b>#e0af68</b> <span>gold</span></li></ul>
+      <p class="open"><a href="midnight-jewel.html">Open full homepage →</a></p>
+      <iframe class="frame" title="Midnight Jewel preview" src="midnight-jewel.html" loading="lazy"></iframe>
+    </article>
+    <article class="card" id="graphite-signal">
+      <header>
+        <h2><a href="graphite-signal.html">Graphite Signal</a> </h2>
+        <p class="blurb">Near-black graphite with bright silver body text. Electric cyan and steel violet are editorial marks, not a wash. A copper hover is the only warm note.</p>
+        <p class="pair">Space Grotesk (display) · Instrument Sans (body) · IBM Plex Mono (dates, index, venue)</p>
+      </header>
+      <ul class="roles"><li><code>bg</code> <b>#0e1116</b> <span>graphite</span></li><li><code>ink</code> <b>#e6ebf2</b> <span>body</span></li><li><code>name</code> <b>#67e8f9 → #a78bfa</b> <span>gradient</span></li><li><code>section</code> <b>#c4b5fd</b> <span>violet</span></li><li><code>links</code> <b>#22d3ee</b> <span>cyan</span></li><li><code>venue</code> <b>#a78bfa</b> <span>violet</span></li><li><code>dates</code> <b>#5eead4</b> <span>teal</span></li><li><code>index</code> <b>#22d3ee</b> <span>cyan</span></li></ul>
+      <p class="open"><a href="graphite-signal.html">Open v2 →</a> · <a href="graphite-signal-v3.html">Open refined v3 (same page, adjusted palette) →</a> · <a href="graphite-signal-v4.html">Open v4 (reading scale, same identity) →</a> · <a href="graphite-signal-v5.html">Open v5 (color across the page) →</a> · <a href="graphite-signal-v6.html">Open v6 (warm and cool) →</a> · <a href="graphite-signal-v7.html">Open v7 (three hues) →</a></p>
+      <p class="pair">v3 keeps #0e1116 / #e6ebf2 and the same fonts. Cyan primary #67D4E8, lilac venues #B7A4ED, cold-white section titles #F2F6FA, dates #8B9BB0.</p>
+      <iframe class="frame" title="Graphite Signal preview" src="graphite-signal.html" loading="lazy"></iframe>
+    </article>
+    <article class="card" id="luminous-prism">
+      <header>
+        <h2><a href="luminous-prism.html">Luminous Prism</a> </h2>
+        <p class="blurb">Cold luminous paper. Sapphire, violet, and teal are small ink accents. Bronze index numbers are the single warm flash. Body text is near-black, not gray.</p>
+        <p class="pair">Sora (display) · Manrope (body) · IBM Plex Mono (dates, index, venue)</p>
+      </header>
+      <ul class="roles"><li><code>bg</code> <b>#f2f4f8</b> <span>paper</span></li><li><code>ink</code> <b>#1b2230</b> <span>body</span></li><li><code>name</code> <b>#1e3a8a → #6d28d9</b> <span>gradient</span></li><li><code>section</code> <b>#1d4ed8</b> <span>sapphire</span></li><li><code>links</code> <b>#0f766e</b> <span>teal</span></li><li><code>venue</code> <b>#6d28d9</b> <span>violet</span></li><li><code>dates</code> <b>#1d4ed8</b> <span>sapphire</span></li><li><code>index</code> <b>#b45309</b> <span>bronze</span></li></ul>
+      <p class="open"><a href="luminous-prism.html">Open full homepage →</a></p>
+      <iframe class="frame" title="Luminous Prism preview" src="luminous-prism.html" loading="lazy"></iframe>
+    </article>
+    <p class="v1">Earlier flatter pass (v1): <a href="graphite-ice.html">Graphite Ice</a> · <a href="naval-silver.html">Naval Silver</a> · <a href="cold-paper.html">Cold Paper</a> · <a href="obsidian-indigo.html">Obsidian Indigo</a></p>
+  </div>
+</body>
+</html>

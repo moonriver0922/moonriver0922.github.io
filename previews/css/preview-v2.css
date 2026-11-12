@@ -1,0 +1,76 @@
+/* v2 color roles. Loaded after preview-base.css.
+   Low colored area, high contrast: ink stays readable silver/charcoal.
+   Color is reserved for the name, section titles, links, venues, dates, and index marks. */
+
+.profile-name {
+  color: var(--name-fallback, var(--heading));
+  background-image: var(--name-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profile-name::after {
+  content: "";
+  display: block;
+  width: 4.75rem;
+  height: 2px;
+  margin-top: 10px;
+  background: var(--spark);
+}
+
+.portrait {
+  border-color: var(--rule-lead);
+}
+
+.block-header {
+  color: var(--section);
+  border-bottom: none;
+  padding-bottom: 8px;
+  background-image: linear-gradient(90deg, var(--rule-lead) 0 2.75rem, var(--rule) 2.75rem);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 100% 2px;
+}
+
+.blue {
+  color: var(--accent);
+}
+
+.venue {
+  color: var(--venue);
+}
+
+.when {
+  color: var(--meta);
+}
+
+.idx {
+  color: var(--idx);
+  font-weight: 500;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--accent-hover);
+}
+
+.links a:hover,
+.links a:focus-visible,
+.profile-contact a:hover,
+.profile-contact a:focus-visible {
+  color: var(--warm, var(--accent-hover));
+}
+
+.legend {
+  color: var(--venue);
+}
+
+::selection {
+  background: var(--selection-bg);
+  color: var(--selection-ink);
+}

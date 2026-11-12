@@ -8,7 +8,7 @@ The page is static HTML and CSS. `.nojekyll` tells GitHub Pages to serve the rep
 
 ## Visual language
 
-The layout is a single-column academic page on a warm near-black background (`#1c1916`), with warm off-white text, dusty rose section titles, and soft amber and sage accents. Body type is [Inter](https://fonts.google.com/specimen/Inter) (OFL), with IBM Plex Sans and system-ui as fallbacks. BBC Reith is not shipped.
+The layout is a single-column academic page on graphite (`#0e1116`). The name and section headings are gold, institutions and links are sage, and publication venues are peach. Biography, paper titles, and author lines are a quiet gray-blue. Display type is Space Grotesk, body type is Instrument Sans, and dates use IBM Plex Mono, loaded from Google Fonts the same way the previous homepage loaded its faces.
 
 ## Local preview
 

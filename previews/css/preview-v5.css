@@ -1,0 +1,52 @@
+/* Graphite Signal v5 — color distribution only.
+   v4 sizes and spacing stay. Near-white is no longer the default ink. */
+
+body {
+  color: var(--prose);
+}
+
+.profile-name {
+  color: var(--name-ink);
+  -webkit-text-fill-color: var(--name-ink);
+  background-image: none;
+}
+
+.profile-name::after {
+  display: none;
+}
+
+.block-header {
+  color: var(--section);
+}
+
+.inst {
+  color: var(--inst);
+}
+
+.item-title {
+  color: var(--title);
+}
+
+.authors {
+  color: var(--authors);
+}
+
+.authors strong {
+  color: var(--author-name);
+  font-weight: 600;
+}
+
+.block p,
+.line,
+.copyright,
+.credit {
+  color: var(--prose);
+}
+
+.when {
+  color: var(--meta);
+}
+
+.legend {
+  color: var(--authors);
+}
