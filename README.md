@@ -22,6 +22,8 @@ Open <http://127.0.0.1:8000/>.
 
 ## Content notes
 
-- Visible email is obfuscated. Google Scholar and ORCID are the profiles already recorded for this site.
+- The email address links to `mailto:river.wang@connect.polyu.hk`. Advisor, institution, department, and Academic Service venue names link to their official sites. Google Scholar and ORCID retain the existing profile links.
+- Teaching includes COMP6708 in 2026/27 Semester 1, and Academic Service lists the 2026 TMC reviewer and MobiCom artifact evaluation roles.
 - No CV file is in the repository, so the header does not link to one.
 - `google98c34d4d07a86a79.html` is the Google Search Console verification file.
+
