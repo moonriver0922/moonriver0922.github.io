@@ -685,3 +685,10 @@ body {
 .legend {
   color: var(--authors);
 }
+
+/* Advisor links keep the surrounding text color. */
+a.advisor-link,
+a.advisor-link:hover,
+a.advisor-link:focus-visible {
+  color: inherit;
+}
