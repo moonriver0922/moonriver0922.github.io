@@ -77,13 +77,13 @@ p {
 }
 
 a {
-  color: var(--accent);
+  color: inherit;
   text-decoration: none;
 }
 
 a:hover,
 a:focus-visible {
-  color: var(--accent-hover);
+  color: inherit;
 }
 
 a:focus-visible {
@@ -323,7 +323,7 @@ strong {
 
 .credit a:hover,
 .credit a:focus-visible {
-  color: var(--accent);
+  color: inherit;
 }
 
 ::selection {
@@ -429,19 +429,19 @@ strong {
 }
 
 a {
-  color: var(--accent);
+  color: inherit;
 }
 
 a:hover,
 a:focus-visible {
-  color: var(--accent-hover);
+  color: inherit;
 }
 
 .links a:hover,
 .links a:focus-visible,
 .profile-contact a:hover,
 .profile-contact a:focus-visible {
-  color: var(--warm, var(--accent-hover));
+  color: inherit;
 }
 
 .legend {
