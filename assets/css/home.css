@@ -692,3 +692,8 @@ a.advisor-link:hover,
 a.advisor-link:focus-visible {
   color: inherit;
 }
+
+/* Academic Service venue names use the site's green accent. */
+#academic-service a {
+  color: var(--accent);
+}
